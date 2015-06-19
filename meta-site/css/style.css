@@ -1,0 +1,462 @@
+/*
+	- Name: David Klassen
+	- Work:	MetaSite Project DKM Styling
+	- File: css/style.css
+	-
+*/
+
+
+/* 
+ * Set the base style shape etc.
+ */
+html, body {
+	width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	font-family: helvetica, arial, sans-serif;
+	
+	height: 100%;
+	color: black;
+}
+
+/* General Style for Links */
+a:link{
+	color: #B8B8B8;
+	text-decoration: none;	
+	border-bottom: 1px black dashed;
+	border-top: none;
+}
+
+a:visited{
+	color: black;
+}
+
+a:hover{
+	text-decoration: none;	
+	border-top: 1px black dashed;
+	border-bottom: none;
+}
+
+a:active{
+	color: purple;
+}
+
+/*
+ * Header Style
+ */
+header {
+	top: 0px;
+	height: 43px;
+	width: 100%;	
+	border-top: solid black;
+	padding: 20px 0px 10px 0px;	
+	background: white;
+}
+/* Our site Header Theme/Title */
+header h1 {
+	display: inline;
+	margin-bottom: 0px;
+	padding: 0px 0px 15px 20px;	
+	font-size: 1.5em;
+	font-family: helvetica, arial, sans-serif;
+	font-style: bold;
+	color: black;
+}
+
+
+/*
+ * Style for Navigation
+ */
+nav {
+	top: 74px;
+	width: 100%;
+	height: 25px;
+
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+nav ul {
+	padding: 0px 0px 0px 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #5C5C5C;
+	color: white;
+	float: left;
+	width: 100%;
+}
+
+nav ul li { display: inline; }
+
+nav ul li a {
+	padding: 0.2em 1em;
+	background-color: #5C5C5C;
+	color: white;
+	text-decoration: none;
+	float: left;	
+}
+
+nav ul li a:link{
+	color: white;
+	border: none;
+	border-right: 1px solid white;	
+}
+
+nav ul li a:visited{
+	color: white;
+	border: none;
+	border-right: 1px solid white;
+}
+
+nav ul li a:hover{
+	background-color: darkgrey;
+	color: white;
+	text-decoration: none;
+	border: none;
+	border-right: 1px solid white;
+}
+
+nav ul li a:active{
+	color: white;
+	border: none;
+	border-right: 1px solid white;
+}
+
+
+/* The currently selected navigation page */
+#current {
+	background-color: #000000;
+}
+
+ 
+/*
+ * The main content section style.
+ */
+section {
+	margin-top: 0px;	
+	padding-top: 0px;
+	padding-bottom: 20px;
+}
+
+.start {
+	padding-top: 5px;
+}
+
+
+/*
+ * Featured article styling.
+ */
+article h2 {
+	margin-left: 20px;
+}
+
+article h3 {
+	margin-left: 20px;
+	font-style: italic;
+}
+
+article p {	
+	margin: 20px;
+}
+
+article ul, article ol {	
+	margin: 20px;
+}
+	
+/*
+ * Added to provide for a bottom sticky footer.
+ */
+
+/* This is the segment that sits atop the footer */
+#topper{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+	border-left: solid black;
+	border-right: solid black;
+	background: white;	
+
+	/* 
+	the bottom margin is the negative value of the footer's height 
+	part of how we ensure footer wont overlap content
+	see the #push for the other part
+	*/
+	 min-height: 100%;
+	 height: auto !important;
+
+	 height: 100%;	
+	 
+	 /* This must be modified to make content even at the bottom 
+		Else the page will always overflow the default browser/page size */
+	 margin-bottom: -78px;
+ }
+ 
+#push {
+	/* 
+	the push must be the same height as footer 
+	this will keep the footer from 
+	overlapping the content of #topper
+	*/
+	height: 75px;
+}
+
+/* 
+ * Footer styling 
+ */ 
+footer{
+	margin: 0 auto;	
+	height: 75px;
+	position:relative;
+	border-top: thin solid black;
+	border-left: solid black;
+	border-right: solid black;
+	border-bottom: solid black;
+
+	background: black;
+}
+
+footer p{
+	padding: 15px 4px;
+	margin-left: auto;
+    margin-right: auto;	
+	
+	text-align: center;
+	line-height: normal;
+	font-size: 14px;
+	color: white;
+}
+
+footer p a:link{
+	color: white;	
+}
+
+footer p a:visited{
+	color: darkgrey;
+	border: none;	
+}
+
+footer p a:hover{
+	color: grey;
+}
+
+footer p a:active{
+	color: yellow;
+	border: none;	
+}
+
+
+/* 
+ * Provide a handheld view for devices less < 625px 
+ */
+@media only screen and (max-width:624px) {
+
+	/*
+	 * If we are on a small mobile device, remove the menu listings	 
+	 * and use a mobile popup menu selector.
+	 */
+	#inactive {
+		display: none;
+		visibility: hidden;
+	}
+
+	/* Make the header font more fluid */
+	header h1 {
+		font-size: 1.25em;
+	}
+	
+	/* 
+	 * Provide for site-map image resizing with view port. 
+	 */
+	img {
+		max-width: 100%;
+	}	
+}
+
+
+/* 
+ * Provide the same style for devices > 625px 
+ */
+@media only screen and (min-width:625px) {
+
+	/*
+	 * These stylings fix the navigation header in place.
+	 */
+	header {
+		position:fixed;
+		top: 0px;
+		height: 43px;
+
+		/* z-index is required to specify header and nav are on the top layer */
+		z-index: 1;			
+	}
+	
+	/* Make the header font more fluid */
+	header h1 {
+		font-size: 1.75em;
+	}
+	
+	nav {
+		position:fixed;	
+		top: 74px;
+		height: 25px;
+
+		margin-top: 0px;
+		margin-bottom: 0px;
+		
+		/* z-index is required to specify header and nav are on the top layer */
+		z-index: 1;			
+	}
+	
+	#pop {
+		height: 110px;
+		width: 95%;
+	}
+
+	/* 
+	 * Provide for site-map image resizing with view port. 
+	 */
+	img {
+		max-width: 100%;
+	}	
+}
+
+/* 
+ * For devices > 1100px make a new column 
+ */
+@media only screen and (min-width:1100px) {
+
+	/* Make the header font more fluid */
+	header h1 {
+		font-size: 2.0em;
+	}
+	
+	section {
+		min-height: 100%;
+		
+		/* Without this, floating our articles caused problems with the
+		 * sticky footer overlapping real content. 
+		 */
+		overflow: auto;
+	}
+
+	/* 
+	 * Column related changes 
+	 */
+	#left {
+		width: 50%;
+		float: left;
+	}
+
+	#right {
+		width: 50%;
+		float: right;
+	}
+	
+	.start_right {
+		padding-top: 5px;
+	}
+	
+	/* 
+	 * Provide for site-map image resizing with view port. 
+	 */
+	img {
+		max-width: 200%;
+	}		
+}
+
+/* 
+ * For devices > 1100px make a new column 
+ */
+@media only screen and (min-width:1700px) {
+
+	/* 
+	 * Provide for site-map image resizing with view port. 
+	 */
+	img {
+		max-width: none;
+	}		
+}
+
+/* 
+ * The printing output of this page is expected to be much simpler.
+ */
+@media only print {
+
+	/* Choose preferred fonts */
+	body{
+		font-family: helvetica, arial, sans-serif;
+	}
+	
+	h1, h2, h3, h4, h5, h6{
+		font-family: "times new roman", helvetica, arial, sans-serif;
+	}
+
+	/* Remove the borders */
+	#topper, header, footer , figure { 
+		border: none;
+	}
+	
+	/* Our site Header Theme/Title */
+	header h1 {
+		display: inline;
+		margin-bottom: 0px;
+		padding: 0px 200px 15px 20px;	
+		font-size: 35px;
+		font-family: "Brush Script MT", helvetica, arial, sans-serif;
+		page-break-after: avoid !important; 
+	}	
+	
+	/* Images will not be printed. */
+	header a {
+		display:none;
+	}	
+	
+	/* The printer will not navigate */
+	nav {
+		display:none;
+	}
+	
+	section{
+		padding:10px;
+		width: 90%;
+		font-size:.85em;
+	}
+	.start {
+		padding-top: 25px;
+	}
+
+	/* Featured article styling. */
+	article {
+		page-break-inside: avoid;
+	}
+	article h2 {
+		margin-left: 20px;
+	}
+
+	article p {	
+		margin-left: 20px;
+		margin-right: 20px;		
+	}
+	
+	article img {
+		display:none;
+	}
+	
+	/* Print-out the links provided. Refrain from printing internal links */
+	a[href^="https://"]:link:after, 
+	a[href^="https://"]:visited:after,
+	a[href^="http://"]:link:after, 
+	a[href^="http://"]:visited:after{
+	   content: " (URL: " attr(href) ") ";
+	   font-size: 90%;
+	}
+	
+	/* Some simple footer style */
+	footer{
+		text-align:center;		
+		page-break-before: avoid !important; 
+	}
+	footer p {
+		color: black;
+	}
+}

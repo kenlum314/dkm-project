@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--- 
+	- Name: David Klassen
+	- Work:	Project DKM Site Map
+	- File: site-map.html
+	-
+	-->
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>
+			Site Map - Project DKM
+		</title>
+		<meta name="keywords" content="Facilitate Website Redesign">
+		<meta name="description" content="Project Redesign Purposed Site Map Comp1950 Course Website">
+		
+		<!-- Reduce high resolution display problems. -->
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		
+		<!-- Use Reset: normalize.css v3.0.2 | MIT License | git.io/normalize -->
+		<link href="css/normalize.css" rel="stylesheet" type="text/css" media="screen">	
+		
+		<!-- The style for our project meta-site -->
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<!-- Ensure all content conforms to a basic shape -->
+	<body>
+	
+		<!-- Define the shrinkable top section -->
+		<div id="topper">
+		
+			<!-- Have a header block for all posts -->
+			<header>
+				<h1>
+					Project DMK
+				</h1>
+			</header>
+		
+			<!-- Use List-based Navigation: http://css.maxdesign.com.au/listamatic/horizontal03.htm -->
+			<nav>		
+				<ul id="navlist">
+					<li id="inactive">
+						<a href="index.html">
+							Introduction
+						</a>
+					</li>	
+					<li id="inactive">
+						<a href="../index.html" >
+							Redesign
+						</a>
+					</li>
+					<li id="active">
+						<a href="site-map.html" id="current">
+							Site Map
+						</a>
+					</li>					
+					<li id="inactive">
+						<a href="rationale.html">
+							Rationale
+						</a>
+					</li>
+				</ul>
+			</nav>
+			
+			<!-- This tag pushes the section content down from the top -->
+			<div id="pop">
+			</div>
+			
+			<!-- Main content -->
+			<section>
+				
+				<!-- Article Text -->
+				<article id="left">
+					<img src="images/site-map.png"/>
+				</article>			
+			</section>
+			
+			<!-- 
+				the #push must be INSIDE #topper
+				and will be styled to be the same height
+				as the footer. this will help keep 
+				content and footer from overlapping
+
+				no content should appear in the #push
+			-->			
+			<div id="push">
+			</div>
+		</div>
+
+		<!-- 
+			our sticky footer!!
+			we want this to always be at the 
+			bottom of the browser page
+		-->
+		<footer>
+			<p>
+				&copy; <a href="https://github.com/kenlum314/dkm-project">DKM Project</a>  2015
+			</p>
+		</footer>
+	</body>	
+
+</html>
