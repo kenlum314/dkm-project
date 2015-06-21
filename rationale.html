@@ -23,6 +23,9 @@
 		<!-- The style for our project meta-site -->
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 		
+		<!-- A CSS menu for small devices -->
+		<link href="css/menu.css" rel="stylesheet" type="text/css">
+		
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -45,23 +48,49 @@
 			<!-- Use List-based Navigation: http://css.maxdesign.com.au/listamatic/horizontal03.htm -->
 			<nav>		
 				<ul id="navlist">
+					<li id="nav" role="navigation">
+						<a href="./rationale.html#nav" title="Show navigation">Show navigation</a>
+						<a href="./rationale.html#" title="Hide navigation">Hide navigation</a>
+						<ul id="navlist">
+							<li>
+								<a href="./index.html">
+									Introduction
+								</a>
+							</li>	
+							<li>
+								<a href="./proto-site/index.html" >
+									Redesign
+								</a>
+							</li>
+							<li>
+								<a href="./site-map.html">
+									Site Map
+								</a>
+							</li>					
+							<li>
+								<a href="./rationale.html" id="current">
+									Rationale
+								</a>
+							</li>
+						</ul>				
+					</li>
 					<li id="inactive">
-						<a href="index.html">
+						<a href="./index.html">
 							Introduction
 						</a>
 					</li>	
 					<li id="inactive">
-						<a href="proto-site/index.html" >
+						<a href="./proto-site/index.html" >
 							Redesign
 						</a>
 					</li>
 					<li id="inactive">
-						<a href="site-map.html">
+						<a href="./site-map.html">
 							Site Map
 						</a>
 					</li>					
 					<li id="active">
-						<a href="rationale.html" id="current">
+						<a href="./rationale.html" id="current">
 							Rationale
 						</a>
 					</li>
@@ -79,165 +108,73 @@
 				<article id="left">
 				
 					<h2 class="start">
-						Mentorship
+						Rationale
 					</h2>
 					<p> 
-						In 2010 I offered to help 
-						<a href="http://www.bcitsa.ca/services/mentorship/">
-							mentor a BCIT CST Student</a>
-						in their half year program. I was excited to take part as I found my career quite 
-						rocky through the dot-bomb and what has since followed. I have tried to stay in 
-						touch with this individual as much as I felt would be welcome. Surprisingly I 
-						found myself to be in a position of being a protege and mentored by some senior 
-						engineering staff, from 2012-2015 for the cause of Internet/Web/Cloud Security.						
-					</p>
-					<p>
-						In 2013 I offered to help SANS Mentor security concerned professionals with the 
-						<a href="http://www.sans.org/course/web-app-penetration-testing-ethical-hacking">
-							SANS 542: Web App Penetration Testing and Ethical Hacking</a> 
-						course. On a part-time basis I attempted to generate interest in the area of web 
-						application security assessment (ie. legal and ethical hacking practices) in the 
-						Vancouver Canada area, and market SANS as a source of training materials and 
-						advice for interested parties. Generating interest in this space in the Vancouver 
-						socio-economic market was not easy, and no official classes were held. I did 
-						however make every attempt to explore how I could legitimize this market in the 
-						Vancouver area and help others find the extra bit of training (and/or reputation) 
-						required to enter into this particular area of technical work.
-						
+						This page describes why we chose to design each of the components in the way that we did.
 					</p>
 				</article>
 				
 				<article id="right">
-					<h2 class="start_right">
-						Knowledge
-					</h2>
+					<h3 class="start_right">
+						Lecture Navigation
+					</h3>
 					<p>
-						There are so many resources for Network/Internet and Web/Cloud Security on the
-						web that you can get lost in all of the information. Early on in my studies I 
-						found <a href="http://csrc.nist.gov/">NIST</a>,
-						<a href="https://www.sans.org/">SANS</a>, and 
-						<a href="https://www.mitre.org/publications/all">Mitre</a> very informative. 
-						Many of their staff produced some great books and research material. As I tried 
-						to describe security to software engineers I found the 
-						<a href="https://buildsecurityin.us-cert.gov/">BSI</a>
-						/ <a href="https://www.securecoding.cert.org">CERT</a> resources invaluable. When it 
-						came to describing security	issues to the entire business I found 
-						<a href="https://www.bsimm.com/">BSIMM</a>
-						/ <a href="http://www.opensamm.org/">OpenSAMM</a> 
-						very important. Here is a short list of some great materials I have found:					
-						<ul>
-							<li>
-								<a href="https://cwe.mitre.org/">Common Weakness Enumeration</a> (CWE)
-							</li>
-							<li>
-								<a href="https://cve.mitre.org/">Common Vulnerabilities and Exposures List</a> (CVE) 
-							</li>						
-							<li>
-								<a href="http://www.sans.org/critical-security-controls/">Critical Security Controls</a> (CAG/CIP)
-							</li>
-							<li>
-								<a href="https://www.sans.org/top25-software-errors/">Top 25 Software Errors</a>
-							</li>
-							<li>
-								<a href="http://csrc.nist.gov/groups/ST/crypto-review/index.html">Cryptographic Standards</a>
-								- FIPS/CC - <a href="http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm">Evaluations</a>
-							</li>
-							<li>
-								<a href="">Special Publications</a> - 800-x - <a href="">Cybersecurity Framework</a> 
-							</li>
-						</ul>
+						Collapsible jQuery lecture navigation bar for navigation between lectures: We found that 
+						we seldom wanted to navigate between lectures once we are in a particular lecture, so a 
+						collapsible navigation bar makes sense to allow more space for the actual content of each 
+						page.
 					</p>
 				</article>
 			</section>
 			<section>
 				<article id="left">
-					<h2>
-						Memberships
-					</h2>
+					<h3>
+						Content Navigation
+					</h3>
 					<p>
-						When it came to reviewing new research in the space certain academic research sites 
-						became important to me, however in terms of consulting with real companies I have 
-						found the work and support of 
-						<a href="https://www.owasp.org/index.php/Main_Page">OWASP</a> to be quite compelling 
-						in terms of communicating directly to Mobile/Web Application development groups 
-						and/or staff. To be quite frank OWASP is much more in your face and can help create
-						security awareness in development groups not just the management: To be honest given
-						it is much harder today to have a silo role that does not involve technology decisions,
-						I believe OWASP speaks to the heart of today's business in the software sector, with 
-						a wide variety of materials and interfaces that provide members with the ability to 
-						learn/contribute:
+						Content navigation bar for navigating to the different anchors within each page. Students 
+						would want to be able to quickly jump to the different subsections of a lecture. We chose 
+						to make this navigation sidebar non-collapsible as we foresee it being used while a student 
+						is viewing the current page:
 						<ul>
 							<li>
-								<a href="https://www.owasp.org/index.php/OWASP_Appsec_Tutorial_Series">The App Sec Tutorial</a>
+								<b>Topical navigation sidebar</b>: Gives an overview of that particular lecture and 
+								enables students to jump to a particular subtopic for quick reference.
 							</li>
 							<li>
-								<a href="https://www.owasp.org/index.php/OWASP_Podcast">Regular Interesting Podcasts</a>
-								- <a href="https://soundcloud.com/owasp-podcast">New Series</a>
+								<b>Exercise navigation sidebar</b>: Enables a student to quickly navigate from one 
+								exercise to the next when studying for quizzes and exams.
 							</li>
 							<li>
-								<a href="https://www.owasp.org/index.php/Category:OWASP_AppSec_Conference">Annual Conferences</a>
+								<b>Homework assignment sidebar</b>: Often, a student will want to jump directly to 
+								the homework assignment assigned for that lecture, so we thought having a dedicated 
+								panel for the assignment will provide quick access to the assignment.
 							</li>
-							<li>
-								<a href="http://2015.appsec.eu/">Research Conferences</a>
-							</li>
-							<li>
-								<a href="https://www.owasp.org/index.php/Category:OWASP_Project">Practical Projects</a>
-							</li>
-							<li>
-								<a href="https://www.owasp.org/index.php/Main_Page">Website Wiki</a>
-							</li>							
 						</ul>
-					</p>
-					<p>
-						It is also important to be able to challenge your local community concerning 
-						the security concepts you are encountering. I have found the 
-						<a href="http://www.securitybsides.com/w/page/12194156/FrontPage">Security B-Sides</a>
-						conference an excellent place to receive new local incites and dialog with fellow
-						security practicioners. The <a href="https://bsidesvancouver.com/">B-Sides Vancouver</a> 
-						conference is also a great place to communicate 
-						<a href="http://www.slideshare.net/dbavedb/creating-developer-security-awareness">
-						your own ideas</a> to a larger local community.
 					</p>
 				</article>	
 				<article id="right">		
-					<h2>
-						Local Dialog
-					</h2>
+					<h3>
+						Related Pages
+					</h3>
 					<p>
-						Simply knowing about one or two specific security features (like 
-							<a href="http://en.wikipedia.org/wiki/Authentication">Authentication</a>,
-							<a href="http://en.wikipedia.org/wiki/Authorization_%28computer_access_control%29">Authorization</a>,
-							<a href="http://en.wikipedia.org/wiki/Accounting">Accounting</a>,
-							<a href="http://en.wikipedia.org/wiki/Key_derivation_function">Password Hashing</a>, and
-							<a href="http://en.wikipedia.org/wiki/Encryption">Encryption Algorithms</a>
-						), might actually make
-						you think you know alot, but knowing everything won't help you respond or 
-						prevent incidents and/or attacks. If your looking to gain wisdom and not 
-						just knowledge, you are	probably looking for the impossible not just the possible. 
-						Preparing for the impossible is one of the reasons I started attending a local 
-						security group called <a href="">VanCitySec</a>. VanCitySec isn't a group of 
-						professionals in suits talking about how big/small their budget is, it's a group 
-						of people that work in all aspects of Security Technology, and if you are looking 
-						to ensure you have covered all the bases for your organization, it is something 
-						you should seek to be a part of. I may have phrased this wrong, but that is the 
-						purpose this groups serves for me. They won't just drill you on
-							<a href="http://en.wikipedia.org/wiki/Security_policy">Policies</a>,
-							<a href="http://en.wikipedia.org/wiki/Protection_Profile">Profiles</a>,
-							<a href="http://en.wikipedia.org/wiki/Intrusion_detection_system">Intrusion Detection</a>,
-							<a href="http://en.wikipedia.org/wiki/Intrusion_prevention_system">Intrusion Prevention</a>, and
-							<a href="http://en.wikipedia.org/wiki/Computer_security">Computer Security</a>, 
-						often the discussion goes beyond the basics towards the principles of 
-							<a href="http://en.wikipedia.org/wiki/Security_engineering">Security Engineering</a>, 
-					</p>
-					<p>
-						They will also let you know about what they are learning in the ever changing
-						section of the Security field they are working in. Once you have tried to take
-						the current Security Risks seriously by being vulnerable with others in the field, perhaps
-						you would like to learn more about the corporate security business. In Vancouver
-						there is a Security Special Interest Group(SIG) for businesses called 
-						<a href="http://www.infosecbc.org/">VanSecSig</a>, and if you find yourself 
-						representing the businesses for the cause of security, this is a good place to 
-						review (or help present) a variety relevant and/or interesting related topics.
+						The other pages such as the “Homepage,” “About the Course,” “Contact,” and “Resources/Links” 
+						page, we decided to put them at the top of the page as a horizontal navigation bar in the header:
+						<ul>
+							<li>
+								Anything that doesn’t need to be accessed often and for which there are few pages, we 
+								decided to place at the top.
+							</li>
+							<li>
+								Anything that pertains to actual course material, we decided to put at the sides and in 
+								the middle where there is the most real estate.
+							</li>
+							<li>
+								We also decided to keep the header thin (height-wise) to ensure content is not pushed 
+								down too far when the user is at the top of the page.
+							</li>
+						</ul>						
 					</p>
 				</article>			
 			</section>
@@ -261,9 +198,8 @@
 		-->
 		<footer>
 			<p>
-				&copy; <a href="https://github.com/kenlum314/dkm-project">DKM Project</a>  2015
+				&copy; <a href="https://github.com/kenlum314/dkm-project">Project DKM</a>  2015
 			</p>
 		</footer>
 	</body>	
-
 </html>

@@ -23,6 +23,9 @@
 		<!-- The style for our project meta-site -->
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 		
+		<!-- A CSS menu for small devices -->
+		<link href="css/menu.css" rel="stylesheet" type="text/css">
+		
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -44,23 +47,49 @@
 			<!-- Use List-based Navigation: http://css.maxdesign.com.au/listamatic/horizontal03.htm -->
 			<nav>		
 				<ul id="navlist">
+					<li id="nav" role="navigation">
+						<a href="./site-map.html#nav" title="Show navigation">Show navigation</a>
+						<a href="./site-map.html#" title="Hide navigation">Hide navigation</a>
+						<ul id="navlist">
+							<li>
+								<a href="./index.html">
+									Introduction
+								</a>
+							</li>	
+							<li>
+								<a href="./proto-site/index.html" >
+									Redesign
+								</a>
+							</li>
+							<li>
+								<a href="./site-map.html" id="current">
+									Site Map
+								</a>
+							</li>					
+							<li>
+								<a href="./rationale.html">
+									Rationale
+								</a>
+							</li>
+						</ul>				
+					</li>				
 					<li id="inactive">
-						<a href="index.html">
+						<a href="./index.html">
 							Introduction
 						</a>
 					</li>	
 					<li id="inactive">
-						<a href="proto-site/index.html" >
+						<a href="./proto-site/index.html" >
 							Redesign
 						</a>
 					</li>
 					<li id="active">
-						<a href="site-map.html" id="current">
+						<a href="./site-map.html" id="current">
 							Site Map
 						</a>
 					</li>					
 					<li id="inactive">
-						<a href="rationale.html">
+						<a href="./rationale.html">
 							Rationale
 						</a>
 					</li>
@@ -99,9 +128,8 @@
 		-->
 		<footer>
 			<p>
-				&copy; <a href="https://github.com/kenlum314/dkm-project">DKM Project</a>  2015
+				&copy; <a href="https://github.com/kenlum314/dkm-project">Project DKM</a>  2015
 			</p>
 		</footer>
 	</body>	
-
 </html>

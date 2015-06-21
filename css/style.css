@@ -11,11 +11,12 @@
  */
 html, body {
 	width: 100%;
+	height: 100%;
 	margin-left:auto;
 	margin-right:auto;
-	font-family: helvetica, arial, sans-serif;
 	
-	height: 100%;
+	font-family: helvetica, arial, sans-serif;
+	line-height: 120%;
 	color: black;
 }
 
@@ -47,16 +48,15 @@ a:active{
 header {
 	top: 0px;
 	height: 43px;
-	width: 100%;	
-	border-top: solid black;
-	padding: 20px 0px 10px 0px;	
-	background: white;
+	width: 100%;
+	padding: 20px 0px 0px 0px;	
+	background: #EFEFEF;
 }
 /* Our site Header Theme/Title */
 header h1 {
 	display: inline;
 	margin-bottom: 0px;
-	padding: 0px 0px 15px 20px;	
+	padding: 0px 0px 10px 20px;	
 	font-size: 1.5em;
 	font-family: helvetica, arial, sans-serif;
 	font-style: bold;
@@ -68,7 +68,7 @@ header h1 {
  * Style for Navigation
  */
 nav {
-	top: 74px;
+	top: 63px;
 	width: 100%;
 	height: 25px;
 
@@ -134,7 +134,7 @@ nav ul li a:active{
 section {
 	margin-top: 0px;	
 	padding-top: 0px;
-	padding-bottom: 20px;
+	padding-bottom: 0px;
 }
 
 .start {
@@ -167,13 +167,9 @@ article ul, article ol {
  */
 
 /* This is the segment that sits atop the footer */
-#topper{
-	width: 100%;
+#topper{	
 	margin-left: auto;
 	margin-right: auto;
-
-	border-left: solid black;
-	border-right: solid black;
 	background: white;	
 
 	/* 
@@ -184,11 +180,10 @@ article ul, article ol {
 	 min-height: 100%;
 	 height: auto !important;
 
-	 height: 100%;	
 	 
 	 /* This must be modified to make content even at the bottom 
 		Else the page will always overflow the default browser/page size */
-	 margin-bottom: -78px;
+	 margin-bottom: -68px;
  }
  
 #push {
@@ -197,7 +192,7 @@ article ul, article ol {
 	this will keep the footer from 
 	overlapping the content of #topper
 	*/
-	height: 75px;
+	height: 54px;
 }
 
 /* 
@@ -205,13 +200,8 @@ article ul, article ol {
  */ 
 footer{
 	margin: 0 auto;	
-	height: 75px;
+	height: 54px;
 	position:relative;
-	border-top: thin solid black;
-	border-left: solid black;
-	border-right: solid black;
-	border-bottom: solid black;
-
 	background: black;
 }
 
@@ -246,9 +236,9 @@ footer p a:active{
 
 
 /* 
- * Provide a handheld view for devices less < 625px 
+ * Provide a handheld view for devices less < 641px 
  */
-@media only screen and (max-width:624px) {
+@media only screen and (max-width:640px) {
 
 	/*
 	 * If we are on a small mobile device, remove the menu listings	 
@@ -274,42 +264,35 @@ footer p a:active{
 
 
 /* 
- * Provide the same style for devices > 625px 
+ * Provide the same style for devices > 640px 
  */
-@media only screen and (min-width:625px) {
+@media only screen and (min-width:641px) {
 
 	/*
 	 * These stylings fix the navigation header in place.
 	 */
 	header {
 		position:fixed;
-		top: 0px;
-		height: 43px;
-
+		
 		/* z-index is required to specify header and nav are on the top layer */
 		z-index: 1;			
 	}
 	
 	/* Make the header font more fluid */
 	header h1 {
-		font-size: 1.75em;
+		font-size: 1.70em;		
 	}
 	
 	nav {
 		position:fixed;	
-		top: 74px;
-		height: 25px;
 
-		margin-top: 0px;
-		margin-bottom: 0px;
-		
 		/* z-index is required to specify header and nav are on the top layer */
 		z-index: 1;			
 	}
 	
 	#pop {
-		height: 110px;
-		width: 95%;
+		height: 88px;
+		width: 100%;
 	}
 
 	/* 
@@ -402,7 +385,7 @@ footer p a:active{
 		margin-bottom: 0px;
 		padding: 0px 200px 15px 20px;	
 		font-size: 35px;
-		font-family: "Brush Script MT", helvetica, arial, sans-serif;
+		font-family: helvetica, arial, sans-serif;
 		page-break-after: avoid !important; 
 	}	
 	
