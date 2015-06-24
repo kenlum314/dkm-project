@@ -5,7 +5,7 @@
 	- Edits: Various edits required to merge with current page.
 	         including size, text, and colors.	
 	- Work:	Project DKM Mobile Menu Styling
-	- File: css/meun.css
+	- File: css/menu.css
 */
 
 
@@ -136,7 +136,7 @@
 			}				
 }
 
-@media only screen and ( min-width: 40em ) /* 640 */ 
+@media only screen and ( min-width:641px ) /* 640 */ 
 {
 	#nav {
 		display: none;
