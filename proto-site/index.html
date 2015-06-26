@@ -16,12 +16,18 @@
 	<!-- Reduce high resolution display problems. -->
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
+    <!-- The Sidr jQuery plugin stylesheet -->
+    <link rel="stylesheet" type="text/css" href="js/sidr-package-1.2.1/stylesheets/jquery.sidr.light.css">
+
     <!-- The style for our project proto-site -->	
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	
 	<!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+
+    <!-- Load jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -62,6 +68,7 @@
 
         <!--#include virtual="includes/course-nav.html" -->
         <main role="main" id="content">
+            <a id="course-nav-toggle" href="">Open Course Nav</a>
 			<h2>Week 1 - Basics</h2>
 			<!-- This is my official comment - Mandip Sandhu -->
 			<p>I am a past BCIT alumni as I graduated from the architectural

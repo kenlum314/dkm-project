@@ -1,4 +1,4 @@
-<aside role="complementary">
+<aside role="complementary" id="sidr">
     <h2>Course Week</h2>
     <ul>
         <li>
@@ -39,3 +39,11 @@
         </li>
     </ul>
 </aside>
+<script type="text/javascript" src="js/sidr-package-1.2.1/jquery.sidr.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#course-nav-toggle').sidr({
+            side: 'right'
+        });
+    });
+</script>
