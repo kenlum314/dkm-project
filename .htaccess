@@ -1,4 +1,4 @@
-ErrorDocument 404 /404/index.html
+ErrorDocument 404 /students/dklassen4/hw9/404/index.html
 
 AddType text/html .html
 AddHandler server-parsed .html

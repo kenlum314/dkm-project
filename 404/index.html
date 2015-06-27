@@ -1,10 +1,49 @@
 <!DOCTYPE html>
-<html>
+<!--- 
+	- Name: David Klassen
+	- Project: Course website for BCIT COMP 1950 
+	- Work:	404 not found page.
+	- File: index.html
+	-
+	-->
+<html lang="en">
+<head>
+	<title>BCIT - COMP 1950</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Facilitate Website Redesign">
+	<meta name="description" content="Project to Redesign Comp1950 Course Website">
+	
+	<!-- Reduce high resolution display problems. -->
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+    <!-- The style for our project proto-site -->	
+	<link rel="stylesheet" type="text/css" href="/students/dklassen4/hw9/proto-site/css/stylesheet.css">
+	
+	<!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Load utility javascript file -->
+	<script type="text/javascript" src="/students/dklassen4/hw9/proto-site/js/util.js"></script>
+</head>
 <body>
+	<div id="container">
 
-<h1>Page Not Found</h1>
+        <!--#include virtual="../proto-site/includes/header.html" -->
 
-<p>Hey it's not here</p>
+        <main role="main" id="content">
 
+			<h2>File Not Found</h2>
+			
+			<!-- Explain what happened -->
+			<p>While requesting the file:
+				<li id="filepath">
+					init: <!--#echo var="DOCUMENT_URI" -->
+				</li>				
+			</p>
+
+            <!--#include virtual="../proto-site/includes/footer.html" -->
+		</main>
+	</div>
 </body>
 </html>
