@@ -5,6 +5,9 @@
 	- File: css/style.css
 	-
 */
+
+/* 1 - rules not determined by media queries - original stylesheet */
+
 body {
     margin: 0;
     background-color: #ffffff;
@@ -45,3 +48,61 @@ footer {
     padding-top: 10px;
     clear: both;
 }
+
+/* 2 - thin clients */
+
+@media only screen and (min-width:100px) and (max-width:800px){
+	#fullscreen{		display:none;	}
+	#thin{				display:block;	}
+
+		#container, nav ul, section, aside, footer{
+		width:auto;
+		font-size:.90em;
+		}
+		
+nav {
+		float:none;
+		width:auto;
+		font-size:.90em;
+		display:block;
+			}
+			
+	nav ul li a	{
+		width:100%;
+		display:block;
+		border-bottom: 1px solid #fff;
+		padding:8px;
+	}
+nav img{margin: 0px;
+display:block;
+width:100%;
+height:auto;}
+ 
+aside			{
+		float:none;
+		width:auto;
+		font-size:.90em;
+		display:block;
+		margin:auto;
+		margin-top:50px;
+		padding:5px 5px 5px 5px;
+		background-color:#787878 ;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+			}
+aside p {margin-left:10px;
+	}
+
+aside h2 { color:white;}
+
+aside h3 { color:white;}
+ 
+main { 	width:auto;
+		font-size:.90em;
+		display:block;
+		margin:0px 0px 0px 0px;
+		border:1px;
+		
+	}
+
