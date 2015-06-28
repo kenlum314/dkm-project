@@ -28,6 +28,7 @@
 	General Styles
 ------------------------------------------------------------ */
 .sitemap {
+    padding: 10px 0 0 10px;
 	margin: 0 0 40px 0;
 	float: left;
 	width: 100%;
@@ -67,7 +68,6 @@
 	display: block;
 	float: none;
 	background: #ffffff url('images/L1-left.png') center bottom no-repeat;
-	position: relative;
 	z-index: 2;
 	padding: 0 0 30px 0;
 }
