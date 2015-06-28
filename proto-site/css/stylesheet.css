@@ -73,10 +73,7 @@ nav {
 		border-bottom: 1px solid #fff;
 		padding:8px;
 	}
-nav img{margin: 0px;
-display:block;
-width:100%;
-height:auto;}
+
  
 aside			{
 		float:none;
@@ -105,4 +102,13 @@ main { 	width:auto;
 		border:1px;
 		
 	}
+}
 
+/*
+3 - media query rules for wide clients
+*/
+
+@media only screen and (min-width:800px){
+	#fullscreen{		display:block;	}
+	#thin{				display:none;	}
+}
