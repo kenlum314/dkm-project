@@ -13,11 +13,18 @@ body {
     background-color: #ffffff;
 }
 #container {
-    background-color: #eeeeee;
-    color: #4A4033;
-    min-width: 960px;
+
+	background-color: #eeeeee;
+	color: #4A4033;
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
     font-family: Verdana, Arial, sans-serif;
 }
+
+
+
 header {
     background-color: blue;
     height: 150px;
@@ -102,13 +109,8 @@ main { 	width:auto;
 		border:1px;
 		
 	}
+	
+
 }
 
-/*
-3 - media query rules for wide clients
-*/
 
-@media only screen and (min-width:800px){
-	#fullscreen{		display:block;	}
-	#thin{				display:none;	}
-}
