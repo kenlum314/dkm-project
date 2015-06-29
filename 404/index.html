@@ -8,7 +8,7 @@
 	-->
 <html lang="en">
 <head>
-	<title>BCIT - COMP 1950</title>
+	<title>404 - COMP 1950</title>
 	<meta charset="utf-8">
 	<meta name="keywords" content="Facilitate Website Redesign">
 	<meta name="description" content="Project to Redesign Comp1950 Course Website">
@@ -16,23 +16,37 @@
 	<!-- Reduce high resolution display problems. -->
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-    <!-- The style for our project proto-site -->	
+	<!-- Bootstrap Style for the Carousel -->
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+	<!-- The Sidr jQuery plugin stylesheet -->
+	<link rel="stylesheet" type="text/css" href="/students/dklassen4/hw9/proto-site/js/sidr-package-1.2.1/stylesheets/jquery.sidr.light.css">
+	
+	<!-- The style for our project proto-site -->	
 	<link rel="stylesheet" type="text/css" href="/students/dklassen4/hw9/proto-site/css/stylesheet.css">
 	
 	<!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+
+	<!-- Load jQuery -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<!-- Load Bootstrap -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
 	
 	<!-- Load utility javascript file -->
-	<script type="text/javascript" src="/students/dklassen4/hw9/proto-site/js/util.js"></script>
+	<script type="text/javascript" src="/students/dklassen4/hw9/proto-site/js/util.js"></script>	
 </head>
 <body>
 	<div id="container">
 
         <!--#include virtual="../proto-site/includes/header.html" -->
 
+		<!--#include virtual="../proto-site/includes/course-nav.html" -->
         <main role="main" id="content">
-
+            <a id="course-nav-toggle" href="">Toggle Nav</a>
+			
 			<h2>File Not Found</h2>
 			
 			<!-- Explain what happened -->
