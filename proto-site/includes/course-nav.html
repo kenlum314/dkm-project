@@ -41,9 +41,18 @@
 </aside>
 <script>
     $(document).ready(function() {
-        $('#course-nav-toggle').sidr({
+        var jQueryCourseNavToggle = $('#course-nav-toggle');
+        jQueryCourseNavToggle.sidr({
             side: 'right',
-            displace: false
+            displace: false,
+            onOpen: function() {
+                jQueryCourseNavToggle.html('Close Course Nav >>');
+                jQueryCourseNavToggle.removeClass('active');
+            },
+            onClose: function() {
+                jQueryCourseNavToggle.html('<< Open Course Nav');
+                jQueryCourseNavToggle.addClass('active');
+            }
         });
         var pathname = document.location.pathname;
         var lecturePathIndex = pathname.indexOf('lectures');
