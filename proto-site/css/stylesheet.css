@@ -26,8 +26,8 @@ header {
     background-color: blue;
     height: 75px;
     color: #728FB3;
-    text-align: right;
-    padding: 10px 20px;
+    text-align: left;
+    padding: 5px 20px;
     border-bottom: 2px solid #000000;
 }
 nav {
