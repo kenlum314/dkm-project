@@ -1,0 +1,9 @@
+<a id="course-nav-toggle" href="">Toggle Course Nav</a>
+
+<script>
+    $(document).ready(function() {
+        if (document.location.pathname.indexOf('lectures') === -1) {
+            $('#course-nav-toggle').click();
+        }
+    });
+</script>
