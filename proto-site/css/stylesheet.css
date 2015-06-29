@@ -45,6 +45,10 @@ main {
     color: #4A4033;
 }
 
+#sidr a.active {
+    background-color: #337ab7;
+}
+
 /* Course Home page styles */
 #home_page {
 	    margin: 0px;
