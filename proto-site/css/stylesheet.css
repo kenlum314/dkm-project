@@ -13,7 +13,6 @@ body {
     background-color: #ffffff;
 }
 #container {
-
 	background-color: #eeeeee;
 	color: #4A4033;
 	width:800px;
@@ -23,11 +22,9 @@ body {
     font-family: Verdana, Arial, sans-serif;
 }
 
-
-
 header {
     background-color: blue;
-    height: 150px;
+    height: 75px;
     color: #728FB3;
     text-align: right;
     padding: 10px 20px;
@@ -57,22 +54,21 @@ footer {
 }
 
 /* 2 - thin clients */
-
 @media only screen and (min-width:100px) and (max-width:800px){
 	#fullscreen{		display:none;	}
 	#thin{				display:block;	}
 
-		#container, nav ul, section, aside, footer{
+	#container, nav ul, section, aside, footer{
 		width:auto;
 		font-size:.90em;
-		}
+	}
 		
-nav {
+	nav {
 		float:none;
 		width:auto;
 		font-size:.90em;
 		display:block;
-			}
+	}
 			
 	nav ul li a	{
 		width:100%;
@@ -80,9 +76,8 @@ nav {
 		border-bottom: 1px solid #fff;
 		padding:8px;
 	}
-
  
-aside			{
+	aside {
 		float:none;
 		width:auto;
 		font-size:.90em;
@@ -94,23 +89,29 @@ aside			{
 		-webkit-border-radius: 10px;
 		-moz-border-radius: 10px;
 		border-radius: 10px;
-			}
-aside p {margin-left:10px;
+	}
+	aside p {
+		margin-left:10px;
 	}
 
-aside h2 { color:white;}
+	aside h2 { color:white;}
 
-aside h3 { color:white;}
+	aside h3 { color:white;}
  
-main { 	width:auto;
+	main { 	
+		width:auto;
 		font-size:.90em;
 		display:block;
 		margin:0px 0px 0px 0px;
-		border:1px;
-		
+		border:1px;	
 	}
-	
-
 }
 
+/* 3 - thick clients */
+@media only screen and (min-width:801px) {
 
+	#container {
+		width: 95%;
+	}
+
+}
