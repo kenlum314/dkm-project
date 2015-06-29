@@ -59,7 +59,6 @@ header h1 {
 	padding: 0px 0px 10px 20px;	
 	font-size: 1.5em;
 	font-family: helvetica, arial, sans-serif;
-	font-style: bold;
 	color: black;
 }
 
@@ -123,7 +122,7 @@ nav ul li a:active{
 
 
 /* The currently selected navigation page */
-#current {
+.current {
 	background-color: #000000;
 }
 
@@ -244,7 +243,7 @@ footer p a:active{
 	 * If we are on a small mobile device, remove the menu listings	 
 	 * and use a mobile popup menu selector.
 	 */
-	#inactive {
+	.inactive {
 		display: none;
 		visibility: hidden;
 	}
@@ -325,12 +324,12 @@ footer p a:active{
 	/* 
 	 * Column related changes 
 	 */
-	#left {
+	.left {
 		width: 50%;
 		float: left;
 	}
 
-	#right {
+	.right {
 		width: 50%;
 		float: right;
 	}
@@ -425,15 +424,6 @@ footer p a:active{
 		display:none;
 	}
 	
-	/* Print-out the links provided. Refrain from printing internal links */
-	a[href^="https://"]:link:after, 
-	a[href^="https://"]:visited:after,
-	a[href^="http://"]:link:after, 
-	a[href^="http://"]:visited:after{
-	   content: " (URL: " attr(href) ") ";
-	   font-size: 90%;
-	}
-	
 	/* Some simple footer style */
 	footer{
 		text-align:center;		
@@ -442,4 +432,13 @@ footer p a:active{
 	footer p {
 		color: black;
 	}
+	
+	/* Print-out the links provided. Refrain from printing internal links */
+	a[href^="https://"]:link:after, 
+	a[href^="https://"]:visited:after,
+	a[href^="http://"]:link:after, 
+	a[href^="http://"]:visited:after {
+		font-size: 90%;
+		content: " (URL: " attr(href) ") ";
+	}	
 }
