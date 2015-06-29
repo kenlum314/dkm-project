@@ -68,8 +68,7 @@ footer {
 }
 
 /* Style for Quiz Button */
-
-.btn {
+.quiz.btn {
   background: #00bbff;
   background-image: -webkit-linear-gradient(top, #00bbff, #001eb3);
   background-image: -moz-linear-gradient(top, #00bbff, #001eb3);
@@ -91,7 +90,7 @@ footer {
   width:100%;
 }
 
-.btn:hover {
+.quiz.btn:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
   background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
