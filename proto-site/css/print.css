@@ -1,0 +1,66 @@
+/*
+	- Name: David Klassen
+	- Project: Course website for BCIT COMP 1950 
+	- Work:	Style Sheet for media Print view
+	- File: css/print.css
+	-
+*/
+
+/* Choose preferred fonts */
+body{
+	font-family: Verdana, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Verdana, Arial, sans-serif;
+}
+
+/* Our site Header Theme/Title */
+header {
+    height: 60px;
+}
+
+/* The printer will not navigate */
+nav {
+    float: none;
+	clear: left;
+    width: 0px;
+	display:none;
+}
+#course-nav-toggle {
+	display:none;
+}
+
+/* No images are expected to be required for students who are reading... */
+img {
+	display:none;
+}
+
+/* Remove the thick left margin */
+main {
+    margin: 0px;
+}
+
+/* Featured article styling. */
+article {
+	margin: 30px;
+	page-break-inside: avoid;
+}
+
+/* Some simple footer style */
+footer{
+	text-align:center;		
+	page-break-before: avoid !important; 
+}
+footer p {
+	color: black;
+}
+
+/* Print-out the links provided. Refrain from printing internal links */
+a[href^="https://"]:link:after, 
+a[href^="https://"]:visited:after,
+a[href^="http://"]:link:after, 
+a[href^="http://"]:visited:after{
+   content: " (URL: " attr(href) ") ";
+   font-size: 90%;
+}

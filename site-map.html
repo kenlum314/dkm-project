@@ -20,11 +20,11 @@
 		<!-- Use Reset: normalize.css v3.0.2 | MIT License | git.io/normalize -->
 		<link href="css/normalize.css" rel="stylesheet" type="text/css" media="screen">
 
-        <!-- For sitemap -->
-        <link rel="stylesheet" type="text/css" media="screen,print" href="css/slickmap.css" />
-
 		<!-- The style for our project meta-site -->
 		<link href="css/style.css" rel="stylesheet" type="text/css">
+
+		<!-- For sitemap -->
+        <link rel="stylesheet" type="text/css" media="screen,print" href="css/slickmap.css" />
 		
 		<!-- A CSS menu for small devices -->
 		<link href="css/menu.css" rel="stylesheet" type="text/css">
@@ -49,11 +49,11 @@
 		
 			<!-- Use List-based Navigation: http://css.maxdesign.com.au/listamatic/horizontal03.htm -->
 			<nav>		
-				<ul id="navlist">
-					<li id="nav" role="navigation">
+				<ul>
+					<li id="nav">
 						<a href="./site-map.html#nav" title="Show navigation">Show navigation</a>
 						<a href="./site-map.html#" title="Hide navigation">Hide navigation</a>
-						<ul id="navlist">
+						<ul>
 							<li>
 								<a href="./index.html">
 									Introduction
@@ -65,7 +65,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="./site-map.html" id="current">
+								<a href="./site-map.html" class="current">
 									Site Map
 								</a>
 							</li>					
@@ -76,22 +76,22 @@
 							</li>
 						</ul>				
 					</li>				
-					<li id="inactive">
+					<li class="inactive">
 						<a href="./index.html">
 							Introduction
 						</a>
 					</li>	
-					<li id="inactive">
+					<li class="inactive">
 						<a href="./proto-site/index.html" >
 							Redesign
 						</a>
 					</li>
-					<li id="active">
-						<a href="./site-map.html" id="current">
+					<li class="active">
+						<a href="./site-map.html" class="current">
 							Site Map
 						</a>
 					</li>					
-					<li id="inactive">
+					<li class="inactive">
 						<a href="./rationale.html">
 							Rationale
 						</a>
