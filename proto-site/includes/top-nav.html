@@ -10,8 +10,12 @@
 
 <script>
     $(document).ready(function() {
+		var documentName = "<!--#echo var="DOCUMENT_URI" -->";
+	
         if (document.location.pathname.indexOf('lectures') === -1) {
             $('#course-nav-toggle').click();
-        }
+        } else if (documentName.indexOf('404') >= 0) {
+            $('#course-nav-toggle').click();
+		}
     });
 </script>
