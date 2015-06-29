@@ -44,6 +44,16 @@ main {
     background-color: #ffffff;
     color: #4A4033;
 }
+
+/* Course Home page styles */
+#home_page {
+	    margin: 0px;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+		width: 70%;
+		margin: auto;
+}
+
 footer {
     font-size: .70em;
     text-align: center;
@@ -62,7 +72,10 @@ footer {
 		width:auto;
 		font-size:.90em;
 	}
-		
+	
+	header h1 {
+		font-size: 2.0em;
+	}
 	nav {
 		float:none;
 		width:auto;
@@ -113,5 +126,4 @@ footer {
 	#container {
 		width: 95%;
 	}
-
 }
