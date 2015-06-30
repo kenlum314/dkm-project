@@ -46,6 +46,7 @@ main {
     color: #4A4033;
 }
 
+/* Lecture Navigation Sidebar Styles */
 #sidr a.active {
     background-color: #337ab7;
 }

@@ -185,7 +185,7 @@ article ul, article ol {
 	 margin-bottom: -68px;
  }
 #topper.site-map {
-    margin-bottom: 850px;
+    margin-bottom: 950px;
 }
 
 #push {
@@ -444,4 +444,9 @@ footer p a:active{
 		font-size: 90%;
 		content: " (URL: " attr(href) ") ";
 	}	
+}
+
+/* Sitemap Styles */
+.sitemap ul.intro-list {
+    list-style: square;
 }
