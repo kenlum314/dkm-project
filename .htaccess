@@ -1,5 +1,24 @@
-ErrorDocument 404 /students/dklassen4/hw9/404/index.html
+# .htaccess 
+# ------------
+# the .htaccess file customizes how the server will behave
+# comments in .htaccess begin with a number sign (like this line does!)
+# the directives below assign the following behaviours:
+# 1 - AddType		determine which MIME type to associate with files based on extension		
+# 2 - AddHandler	assigns which file extensions will be processed for SSIs
+# 3 - Options		enables SSIs, and allows this .htaccess file to apply to all subfolders
 
+# We are using SSIs for html files.
 AddType text/html .html
 AddHandler server-parsed .html
 Options Indexes FollowSymLinks Includes
+
+# Handle errors as follows:
+ErrorDocument 404 /students/dklassen4/hw9/404/index.html
+ErrorDocument 400 /students/dklassen4/hw9/errors/index.html
+ErrorDocument 401 /students/dklassen4/hw9/errors/index.html
+ErrorDocument 402 /students/dklassen4/hw9/errors/index.html
+ErrorDocument 403 /students/dklassen4/hw9/errors/index.html
+ErrorDocument 405 /students/dklassen4/hw9/errors/index.html
+ErrorDocument 500 /students/dklassen4/hw9/errors/index.html
+ErrorDocument 501 /students/dklassen4/hw9/errors/index.html
+

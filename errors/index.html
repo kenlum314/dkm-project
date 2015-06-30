@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--- 
+	- Name: David Klassen
+	- Project: Course website for BCIT COMP 1950 
+	- Work:	Error page.
+	- File: errors/index.html
+	-
+	-->
+<html lang="en">
+<head>
+	<title>Error Page - COMP 1950</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Facilitate Website Redesign">
+	<meta name="description" content="Project to Redesign Comp1950 Course Website">
+	
+	<!-- Reduce high resolution display problems. -->
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+	<!-- Bootstrap Style for the Carousel -->
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+	<!-- The Sidr jQuery plugin stylesheet -->
+	<link rel="stylesheet" type="text/css" href="/students/dklassen4/hw9/proto-site/js/sidr-package-1.2.1/stylesheets/jquery.sidr.light.css">
+	
+	<!-- The style for our project proto-site -->	
+	<link rel="stylesheet" type="text/css" href="/students/dklassen4/hw9/proto-site/css/stylesheet.css">
+	
+	<!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Load jQuery -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Load sidr -->
+	<script type="text/javascript" src="/students/dklassen4/hw9/proto-site/js/sidr-package-1.2.1/jquery.sidr.min.js"></script>
+	
+	<!-- Load Bootstrap -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
+	
+	<!-- Load utility javascript file -->
+	<script type="text/javascript" src="/students/dklassen4/hw9/proto-site/js/util.js"></script>	
+</head>
+<body>
+	<div id="container">
+
+        <!--#include virtual="../proto-site/includes/header.html" -->
+
+		<!--#include virtual="../proto-site/includes/course-nav.html" -->
+        <main id="home_page">
+            <!--#include virtual="../proto-site/includes/top-nav.html" -->
+			
+			<h2>Retrieval Error</h2>
+			
+			<!-- Explain what happened -->
+			<p>A problem occurred with your request for: 
+				<ul>
+					<li id="filepath">
+						init: <!--#echo var="DOCUMENT_URI" -->
+					</li>
+				</ul>
+				and you have been redirected here.
+			</p>
+
+            <!--#include virtual="../proto-site/includes/footer.html" -->
+		</main>
+	</div>
+</body>
+</html>
