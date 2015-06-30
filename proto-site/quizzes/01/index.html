@@ -16,6 +16,9 @@
 	<!-- Reduce high resolution display problems. -->
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
+	<!-- Bootstrap Style for the Carousel -->
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
     <!-- The Sidr jQuery plugin stylesheet -->
     <link rel="stylesheet" type="text/css" href="../../js/sidr-package-1.2.1/stylesheets/jquery.sidr.light.css">
 
@@ -34,15 +37,20 @@
 
     <!-- Load jQuery -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/sidr-package-1.2.1/jquery.sidr.min.js"></script>
+
+    <!-- Load Bootstrap -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>		
 </head>
 <body>
 	<div id="container">
 
         <!--#include virtual="../../includes/header.html" -->
 		
-
+        <!--#include virtual="../../includes/course-nav.html" -->
         <main role="main" id="content">
-			
+            <!--#include virtual="../../includes/top-nav.html" -->
+
 			<h2>Quiz #1</h2>		
 			
 			<form action="quiz.php" method="post">
