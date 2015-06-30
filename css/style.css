@@ -166,7 +166,7 @@ article ul, article ol {
  */
 
 /* This is the segment that sits atop the footer */
-#topper{	
+#topper {
 	margin-left: auto;
 	margin-right: auto;
 	background: white;	
@@ -184,7 +184,10 @@ article ul, article ol {
 		Else the page will always overflow the default browser/page size */
 	 margin-bottom: -68px;
  }
- 
+#topper.site-map {
+    margin-bottom: 850px;
+}
+
 #push {
 	/* 
 	the push must be the same height as footer 
