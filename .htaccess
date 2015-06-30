@@ -13,12 +13,12 @@ AddHandler server-parsed .html
 Options Indexes FollowSymLinks Includes
 
 # Handle errors as follows:
-ErrorDocument 404 /students/dklassen4/hw9/404/index.html
-ErrorDocument 400 /students/dklassen4/hw9/errors/index.html
-ErrorDocument 401 /students/dklassen4/hw9/errors/index.html
-ErrorDocument 402 /students/dklassen4/hw9/errors/index.html
-ErrorDocument 403 /students/dklassen4/hw9/errors/index.html
-ErrorDocument 405 /students/dklassen4/hw9/errors/index.html
-ErrorDocument 500 /students/dklassen4/hw9/errors/index.html
-ErrorDocument 501 /students/dklassen4/hw9/errors/index.html
+ErrorDocument 404 /students/dklassen4/project-dkm/404/index.html
+ErrorDocument 400 /students/dklassen4/project-dkm/errors/index.html
+ErrorDocument 401 /students/dklassen4/project-dkm/errors/index.html
+ErrorDocument 402 /students/dklassen4/project-dkm/errors/index.html
+ErrorDocument 403 /students/dklassen4/project-dkm/errors/index.html
+ErrorDocument 405 /students/dklassen4/project-dkm/errors/index.html
+ErrorDocument 500 /students/dklassen4/project-dkm/errors/index.html
+ErrorDocument 501 /students/dklassen4/project-dkm/errors/index.html
 
