@@ -49,6 +49,13 @@ main {
 #sidr a.active {
     background-color: #337ab7;
 }
+.sidr ul li:hover > a.disabled, .sidr ul li a.disabled {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor: default;
+    color: grey;
+}
 
 /* Course Home page styles */
 #home_page {
