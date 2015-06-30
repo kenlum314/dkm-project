@@ -27,7 +27,7 @@ nav {
     width: 0px;
 	display:none;
 }
-#course-nav-toggle, #top_nav, #sidr {
+#course-nav-toggle, #top_nav, #sidr, #sidr h2, #sidr ul, #sidr ul li, #sidr ul li a {
 	display:none;
 }
 
